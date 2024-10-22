@@ -14,8 +14,8 @@ export const Layout = () => {
         <div className="contentContainer">
           <Outlet />
         </div>
-        <Footer />
       </div>
+      <Footer />
     </div>
   );
 };

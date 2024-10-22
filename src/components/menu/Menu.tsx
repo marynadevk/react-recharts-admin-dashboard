@@ -1,3 +1,21 @@
+import { Link } from 'react-router-dom';
+import './Menu.scss';
+import { menuData } from '../../data';
+
 export const Menu = () => {
-  return <div>Menu</div>;
+  return (
+    <div className="menu">
+      {menuData.map((item) => (
+        <div className="item" key={item.id}>
+          <span className="title">{item.title}</span>
+          {item.listItems.map((listItem) => (
+            <Link to={listItem.url} className="listItem" key={listItem.id}>
+              {listItem.icon}
+              <span className="listItemTitle">{listItem.title}</span>
+            </Link>
+          ))}
+        </div>
+      ))}
+    </div>
+  );
 };
