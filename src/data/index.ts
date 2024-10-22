@@ -10,3 +10,5 @@ export * from './singleUserData.ts';
 export * from './topDealUsersData.ts';
 export * from './userRowsData.ts';
 export * from './barChartBoxRevenueData.ts';
+export * from './appliancesData.ts';
+export * from './categoriesData.ts';

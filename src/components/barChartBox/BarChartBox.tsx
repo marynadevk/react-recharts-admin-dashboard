@@ -19,6 +19,7 @@ export const BarChartBox = (props: Props) => {
               contentStyle={{ background: '#583101', borderRadius: '5px' }}
               labelStyle={{ display: 'none' }}
               cursor={{ fill: 'none' }}
+              itemStyle={{ color: '#f4f4ed' }}
             />
             <Bar dataKey={props.dataKey} fill={props.color} />
           </BarChart>
