@@ -1,17 +1,32 @@
+import { BiConversation } from 'react-icons/bi';
+
+const chartData = [
+  { name: 'Sun', ratio: 2.3 },
+  { name: 'Mon', ratio: 2.8 },
+  { name: 'Tue', ratio: 2.5 },
+  { name: 'Wed', ratio: 3.0 },
+  { name: 'Thu', ratio: 2.2 },
+  { name: 'Fri', ratio: 2.7 },
+  { name: 'Sat', ratio: 2.4 },
+];
+
+const averageRatio =
+  chartData.reduce((acc, item) => acc + item.ratio, 0) / chartData.length;
+
 export const chartBoxConversionData = {
-  color: 'gold',
-  icon: '/conversionIcon.svg',
+  color: '#ccff33',
+  icon: <BiConversation fill='#ccff33' size={30}/>,
   title: 'Total Ratio',
-  number: '2.6',
+  number: averageRatio.toFixed(2),
   dataKey: 'ratio',
-  percentage: 12,
+  percentage: 27,
   chartData: [
-    { name: 'Sun', ratio: 400 },
-    { name: 'Mon', ratio: 600 },
-    { name: 'Tue', ratio: 500 },
-    { name: 'Wed', ratio: 700 },
-    { name: 'Thu', ratio: 400 },
-    { name: 'Fri', ratio: 500 },
-    { name: 'Sat', ratio: 450 },
+    { name: 'Sun', ratio: 2.3 },
+    { name: 'Mon', ratio: 2.8 },
+    { name: 'Tue', ratio: 2.5 },
+    { name: 'Wed', ratio: 3.0 },
+    { name: 'Thu', ratio: 2.2 },
+    { name: 'Fri', ratio: 2.7 },
+    { name: 'Sat', ratio: 2.4 },
   ],
 };

@@ -1,17 +1,20 @@
+import { FaRegUser } from 'react-icons/fa';
+
+const chartData = [
+  { name: 'Sun', users: 900 },
+  { name: 'Mon', users: 200 },
+  { name: 'Tue', users: 500 },
+  { name: 'Wed', users: 700 },
+  { name: 'Thu', users: 300 },
+  { name: 'Fri', users: 1550 },
+  { name: 'Sat', users: 750 },
+];
 export const chartBoxUserData = {
-  color: '#8884d8',
-  icon: '/userIcon.svg',
+  color: '#fb6107',
+  icon: <FaRegUser fill='#fb6107' size={30}/>,
   title: 'Total Users',
-  number: '11.238',
+  number: chartData.reduce((acc, cur) => acc + cur.users, 0),
   dataKey: 'users',
-  percentage: 45,
-  chartData: [
-    { name: 'Sun', users: 400 },
-    { name: 'Mon', users: 600 },
-    { name: 'Tue', users: 500 },
-    { name: 'Wed', users: 700 },
-    { name: 'Thu', users: 400 },
-    { name: 'Fri', users: 500 },
-    { name: 'Sat', users: 450 },
-  ],
+  percentage: 41,
+  chartData,
 };

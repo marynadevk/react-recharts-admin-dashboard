@@ -12,7 +12,7 @@ export const BarChartBox = (props: Props) => {
   return (
     <div className="barChartBox">
       <h1>{props.title}</h1>
-      <div className="chart">
+      <div>
         <ResponsiveContainer width="99%" height={150}>
           <BarChart data={props.chartData}>
             <Tooltip
