@@ -11,8 +11,8 @@ export const singleUserData = {
   },
   chart: {
     dataKeys: [
-      { name: 'visits', color: '#82ca9d' },
-      { name: 'clicks', color: '#8884d8' },
+      { name: 'visits', color: '#ffff3f' },
+      { name: 'clicks', color: '#f7aef8' },
     ],
     data: [
       {

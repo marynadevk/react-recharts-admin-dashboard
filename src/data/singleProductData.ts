@@ -11,8 +11,8 @@ export const singleProductData = {
   },
   chart: {
     dataKeys: [
-      { name: 'visits', color: '#82ca9d' },
-      { name: 'orders', color: '#8884d8' },
+      { name: 'visits', color: '#f7cf13' },
+      { name: 'orders', color: '#ff0f80' },
     ],
     data: [
       {

@@ -1,0 +1,63 @@
+@import '../../styles/variables.scss';
+
+.dataTable {
+  .dataGrid {
+    color: $soft-color;
+    background: $soft-bg;
+    padding: 20px;
+
+    .MuiDataGrid-toolbarContainer {
+      flex-direction: row-reverse;
+    }
+
+    img {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .action {
+      display: flex;
+      gap: 15px;
+
+      img {
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+        fill: $soft-color;
+      }
+    }
+
+    .MuiDataGrid-columnHeader {
+      background: $soft-bg;
+      color: $soft-color;
+    }
+
+    .MuiDataGrid-cell {
+      display: flex;
+      align-items: center;
+    }
+
+    .MuiDataGrid-columnHeaderTitle {
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    .MuiButtonBase-root {
+      color: $soft-color;
+    }
+
+    .MuiTablePagination-displayedRows {
+      color: $soft-color;
+    }
+
+    .MuiSvgIcon-root {
+      fill: $soft-color;
+    }
+
+    .MuiInputBase-input {
+      color: $soft-color;
+    }
+  }
+}

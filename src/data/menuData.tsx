@@ -47,13 +47,13 @@ export const menuData = [
       {
         id: 3,
         title: 'Orders',
-        url: '/orders',
+        url: '/',
         icon: <BsClipboard2CheckFill />,
       },
       {
         id: 4,
         title: 'Posts',
-        url: '/posts',
+        url: '/',
         icon: <MdLibraryBooks />,
       },
     ],

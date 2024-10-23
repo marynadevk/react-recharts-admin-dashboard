@@ -1,7 +1,7 @@
 export const appliancesData = [
-  { name: 'Refrigerator', value: 700, color: '#ff8800' },
-  { name: 'Washing Machine', value: 750, color: '#ffaa00' },
+  { name: 'Refrigerator', value: 70, color: '#ff8800' },
+  { name: 'Toaster', value: 350, color: '#ffaa00' },
   { name: 'Microwave', value: 300, color: '#ffc300' },
-  { name: 'Air Conditioner', value: 550, color: '#ffdd00' },
-  { name: 'Dishwasher', value: 400, color: '#ffff3f' },
+  { name: 'Mobile', value: 650, color: '#ffff3f' },
+  { name: 'Dishwasher', value: 100, color: '#ffdd00' },
 ];
