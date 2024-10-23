@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import './Products.scss';
+import './products.scss';
 import { DataTable } from '../../components/dataTable/DataTable';
 import { Modal } from '../../components/add/Modal';
 import { GridColDef } from '@mui/x-data-grid';
@@ -13,8 +13,9 @@ const columns: GridColDef[] = [
     headerName: 'Image',
     width: 100,
     renderCell: (params) => {
-      return <img src={params.row.img || <MdOutlineImageNotSupported />
-      } alt="" />;
+      return (
+        <img src={params.row.img || <MdOutlineImageNotSupported />} alt="" />
+      );
     },
   },
   {
